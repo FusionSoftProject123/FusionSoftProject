@@ -30,7 +30,6 @@ import com.fusion.service.UserServiceImpl;
  * @EnableWebMvc
  */
 /*This is for Controller*/
-/*hello*/
 @Controller
 public class FusionMainController {
 

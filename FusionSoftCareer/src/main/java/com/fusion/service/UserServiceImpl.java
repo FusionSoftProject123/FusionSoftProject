@@ -27,7 +27,6 @@ public class UserServiceImpl implements UserService {
 			UserVo pwd = userDao.findByPassword(username, password);
 			usr.setPassword(pwd.getPassword());
 			usr.setName(pwd.getName());
-			usr.setId(pwd.getId());
 		} catch (UserNotFound e) {
 			throw new UserNotFoundService("User not available");
 		}

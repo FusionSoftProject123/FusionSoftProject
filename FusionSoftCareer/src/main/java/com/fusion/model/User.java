@@ -4,16 +4,6 @@ import javax.persistence.Column;
 
 public class User {
 
-	private int id;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
 	@Column(name = "username")
 	private String name;
 

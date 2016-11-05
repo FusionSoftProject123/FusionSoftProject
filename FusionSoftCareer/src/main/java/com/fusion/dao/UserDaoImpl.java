@@ -35,7 +35,6 @@ public class UserDaoImpl implements UserDao {
 
 		users = getSessionFactory().openSession().createQuery("from UserVo where username=? and password=?")
 				.setParameter(0, username).setParameter(1, password).list();
-
 		if (users.size() > 0) {
 			return users.get(0);
 		} else {
